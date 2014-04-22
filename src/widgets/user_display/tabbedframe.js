@@ -78,7 +78,7 @@ define([
 
             self.$tabs.on('click', 'button', function(evt) {
                 if (!$(this).hasClass('disable')) {
-                    this.trigger('tabbuttonclick');
+                    $(this).trigger('tabbuttonclick');
                     self.open($(this).data('idx'));
                 }
             });
