@@ -362,6 +362,7 @@ define([
             if (clickedModel.get(this.get('selectedAttr'))) {
                 return;
             }
+            this.trigger('rowclick');
             this.select(clickedModel);
         },
 
